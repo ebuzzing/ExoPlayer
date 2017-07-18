@@ -13,7 +13,20 @@
 // limitations under the License.
 apply plugin: 'bintray-release'
 
+
+Properties properties = new Properties()
+def bintrayUserValue
+def bintrayApiKeyValue
+if(project.rootProject.file('signing.properties').exists()){
+    properties.load(project.rootProject.file('signing.properties').newDataInputStream())
+    bintrayUserValue = properties.getProperty("bintray.user")
+    bintrayApiKeyValue = properties.getProperty("bintray.apikey")
+}
+
 publish {
+    bintrayUser = bintrayUserValue
+    bintrayKey = bintrayApiKeyValue
+
     artifactId = releaseArtifact
     description = releaseDescription
     repoName = releaseRepoName
@@ -21,4 +34,5 @@ publish {
     groupId = releaseGroupId
     version = releaseVersion
     website = releaseWebsite
+    dryRun  = false
 }

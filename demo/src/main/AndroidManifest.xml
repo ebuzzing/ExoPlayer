@@ -31,9 +31,9 @@
       android:banner="@drawable/ic_banner"
       android:largeHeap="true"
       android:allowBackup="false"
-      android:name="com.google.android.exoplayer2.demo.DemoApplication">
+      android:name="tv.teads.android.exoplayer2.demo.DemoApplication">
 
-    <activity android:name="com.google.android.exoplayer2.demo.SampleChooserActivity"
+    <activity android:name="tv.teads.android.exoplayer2.demo.SampleChooserActivity"
         android:configChanges="keyboardHidden"
         android:label="@string/application_name">
       <intent-filter>
@@ -55,7 +55,7 @@
       </intent-filter>
     </activity>
 
-    <activity android:name="com.google.android.exoplayer2.demo.PlayerActivity"
+    <activity android:name="tv.teads.android.exoplayer2.demo.PlayerActivity"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
         android:launchMode="singleTop"
         android:label="@string/application_name"
