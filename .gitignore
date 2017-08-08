@@ -63,3 +63,5 @@ extensions/cronet/jniLibs/*
 !extensions/cronet/jniLibs/README.md
 extensions/cronet/libs/*
 !extensions/cronet/libs/README.md
+
+signing\.properties

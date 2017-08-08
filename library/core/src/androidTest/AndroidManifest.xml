@@ -25,12 +25,12 @@
       tools:ignore="MissingApplicationIcon,HardcodedDebugMode">
     <uses-library android:name="android.test.runner"/>
     <provider
-      android:authorities="com.google.android.exoplayer2.core.test"
-      android:name="com.google.android.exoplayer2.upstream.ContentDataSourceTest$TestContentProvider"/>
+      android:authorities="tv.teads.android.exoplayer2.test"
+      android:name="tv.teads.android.exoplayer2.upstream.ContentDataSourceTest$TestContentProvider"/>
   </application>
 
   <instrumentation
-      android:targetPackage="com.google.android.exoplayer2.core.test"
+      android:targetPackage="tv.teads.android.exoplayer2"
       android:name="android.test.InstrumentationTestRunner"
       tools:replace="android:targetPackage"/>
 
